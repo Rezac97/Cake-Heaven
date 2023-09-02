@@ -1,0 +1,11 @@
+<select name="" id="" (change)="onClick($event)">
+  <option value="{{ item }}" *ngFor="let item of ingredients">
+    {{ item }}
+  </option>
+</select>
+
+<div class="row">
+  <div class="col-4" *ngFor="let item of cakes">
+    <app-cake-item [cake]="item"></app-cake-item>
+  </div>
+</div>

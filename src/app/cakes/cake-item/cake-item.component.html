@@ -1,0 +1,16 @@
+<div class="card" [routerLink]="[cake._id]">
+  <div class="card-body">
+    <div class="row">
+      <div>
+        <div>
+          <img
+            src="http://localhost:3000/image/cakes/{{ cake._id }}.jpg"
+            width="100%"
+          />
+        </div>
+        <p class="card-text">{{ cake.name }}</p>
+        <p class="card-text">{{ cake.ingredients }}</p>
+      </div>
+    </div>
+  </div>
+</div>
